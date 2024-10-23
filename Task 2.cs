@@ -17,37 +17,74 @@ namespace AirlineReservationSystem
         private string password;
         private List<Reservation> reservations;
 
-        public int GetCustomerId() { return customerId; }
-        public void SetCustomerId(int value) { customerId = value; }
+        public int GetCustomerId() { 
+            return customerId; 
+        }
+        public void SetCustomerId(int value) { 
+            customerId = value;
+        }
 
-        public string GetLastName() { return lastName; }
-        public void SetLastName(string value) { lastName = value; }
+        public string GetLastName() {
+            return lastName;
+        }
+        public void SetLastName(string value) {
+            lastName = value;
+        }
 
-        public string GetFirstName() { return firstName; }
-        public void SetFirstName(string value) { firstName = value; }
+        public string GetFirstName() {
+            return firstName;
+        }
+        public void SetFirstName(string value) {
+            firstName = value;
+        }
 
-        public string GetStreet() { return street; }
-        public void SetStreet(string value) { street = value; }
+        public string GetStreet() {
+            return street;
+        }
+        public void SetStreet(string value) {
+            street = value;
+        }
 
-        public string GetCity() { return city; }
-        public void SetCity(string value) { city = value; }
+        public string GetCity() { 
+            return city; 
+        }
+        public void SetCity(string value) { 
+            city = value; 
+        }
 
-        public string GetState() { return state; }
-        public void SetState(string value) { state = value; }
-
-        public string GetZipCode() { return zipCode; }
-        public void SetZipCode(string value) { zipCode = value; }
-
-        public string GetPhone() { return phone; }
-        public void SetPhone(string value) { phone = value; }
-
-        public string GetEmail() { return email; }
-        public void SetEmail(string value) { email = value; }
-
-        public string GetPassword() { return password; }
-        public void SetPassword(string value) { password = value; }
-
-        public List<Reservation> GetReservations() { return reservations; }
+        public string GetState() {
+            return state;
+        }
+        public void SetState(string value) {
+            state = value;
+        }
+        public string GetZipCode() { 
+            return zipCode;
+        }
+        public void SetZipCode(string value) {
+            zipCode = value;
+        }
+        public string GetPhone() {
+            return phone; 
+        }
+        public void SetPhone(string value) {
+            phone = value; 
+        }
+        public string GetEmail() {
+            return email;
+        }
+        public void SetEmail(string value) {
+            email = value;
+        }
+        public string GetPassword() { 
+            return password;
+        }
+        public void SetPassword(string value) {
+            password = value;
+        }
+        public List<Reservation> GetReservations() {
+            return reservations;
+        }
         public void SetReservations(List<Reservation> value) { reservations = value; }
 
         public Customer()
@@ -66,11 +103,18 @@ namespace AirlineReservationSystem
         private string creditCardType;
         private string creditCardNo;
 
-        public string GetCreditCardType() { return creditCardType; }
-        public void SetCreditCardType(string value) { creditCardType = value; }
-
-        public string GetCreditCardNo() { return creditCardNo; }
-        public void SetCreditCardNo(string value) { creditCardNo = value; }
+        public string GetCreditCardType() {
+        return creditCardType;
+        }
+        public void SetCreditCardType(string value) { 
+        creditCardType = value; 
+        }
+        public string GetCreditCardNo() {
+        return creditCardNo;
+        }
+        public void SetCreditCardNo(string value) {
+        creditCardNo = value;
+        }
     }
 
     public class CorporateCustomer : Customer
@@ -79,14 +123,25 @@ namespace AirlineReservationSystem
         private int frequentFlyerPoints;
         private string billingAccountNo;
 
-        public string GetCompanyName() { return companyName; }
-        public void SetCompanyName(string value) { companyName = value; }
+        public string GetCompanyName() {
+        return companyName; 
+        }
+        public void SetCompanyName(string value) {
+        companyName = value;
+        }
 
-        public int GetFrequentFlyerPoints() { return frequentFlyerPoints; }
-        public void SetFrequentFlyerPoints(int value) { frequentFlyerPoints = value; }
-
-        public string GetBillingAccountNo() { return billingAccountNo; }
-        public void SetBillingAccountNo(string value) { billingAccountNo = value; }
+        public int GetFrequentFlyerPoints() {
+        return frequentFlyerPoints; 
+        }
+        public void SetFrequentFlyerPoints(int value) {
+        frequentFlyerPoints = value;
+        }
+        public string GetBillingAccountNo() {
+        return billingAccountNo;
+        }
+        public void SetBillingAccountNo(string value) {
+        billingAccountNo = value;
+        }
     }
 
     public class Reservation
@@ -96,17 +151,32 @@ namespace AirlineReservationSystem
         private List<Seat> seats;
         private Flight flight;
 
-        public int GetReservationNo() { return reservationNo; }
-        public void SetReservationNo(int value) { reservationNo = value; }
+        public int GetReservationNo() {
+            return reservationNo;
+        }
+        public void SetReservationNo(int value) {
+            reservationNo = value;
+        }
 
-        public DateTime GetDate() { return date; }
-        public void SetDate(DateTime value) { date = value; }
+        public DateTime GetDate() {
+            return date;
+        }
+        public void SetDate(DateTime value) {
+            date = value; 
+        }
 
-        public List<Seat> GetSeats() { return seats; }
-        public void SetSeats(List<Seat> value) { seats = value; }
-
-        public Flight GetFlight() { return flight; }
-        public void SetFlight(Flight value) { flight = value; }
+        public List<Seat> GetSeats() {
+            return seats; 
+        }
+        public void SetSeats(List<Seat> value) {
+            seats = value;
+        }
+        public Flight GetFlight() { 
+            return flight;
+        }
+        public void SetFlight(Flight value) { 
+            flight = value; 
+        }
 
         public Reservation()
         {
@@ -195,8 +265,8 @@ namespace AirlineReservationSystem
             Flight flight = new Flight();
             flight.SetFlightId(101);
             flight.SetDate(DateTime.Now);
-            flight.SetOrigin("New York");
-            flight.SetDestination("Los Angeles");
+            flight.SetOrigin("Multan");
+            flight.SetDestination("Islamabad");
             flight.SetDepartureTime(new TimeSpan(10, 30, 0));
             flight.SetArrivalTime(new TimeSpan(13, 45, 0));
             flight.SetSeatingCapacity(150);
@@ -220,7 +290,7 @@ namespace AirlineReservationSystem
             customer.SetCustomerId(1);
             customer.SetFirstName("Wajahat");
             customer.SetLastName("ul Hasnain");
-            customer.SetEmail("wajahat.doe@example.com");
+            customer.SetEmail("wajahat559@gmail.com");
             customer.SetCreditCardType("Visa");
             customer.SetCreditCardNo("1234-5678-9876-5432");
 
